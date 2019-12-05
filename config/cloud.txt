@@ -1,0 +1,41 @@
+///cloud name
+meimg
+
+///api key   
+412777663376211
+
+///API secret:
+mJSqIuElnyRACcKXWDoiM6nWhO0
+
+///
+Environment variable:
+cloudinary://412777663376211:mJSqIuElnyRACcKXWDoiM6nWhO0@meimg/
+
+////sample upload code
+cloudinary.uploader.upload("sample.jpg", {"crop":"limit"
+,"tags":"samples","width":3000,"height":2000}, function(result)
+ { console.log(result) });
+
+
+ ////Sample image manipulation tag
+
+ cloudinary.image("sample", {"crop":"fill","gravity":"faces",
+ "width":300,"height":200,"format":"jpg"});
+ 
+
+
+ ////
+ .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
